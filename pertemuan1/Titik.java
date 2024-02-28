@@ -7,6 +7,11 @@ public class Titik {
         counterTitik++;
     }
 
+    public Titik(double a, double b){
+        this.absis=a;
+        this.ordinat=b;
+    }
+
     double getAbsis(){
         return absis;
     }
