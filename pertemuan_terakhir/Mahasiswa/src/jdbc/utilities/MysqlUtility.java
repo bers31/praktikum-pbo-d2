@@ -19,7 +19,7 @@ public class MysqlUtility {
     public static Connection getConnection() {
         if (koneksi == null) {
             try {
-                Class.forName("com.mysql.jdbc.Driver");
+                Class.forName("com.mysql.cj.jdbc.Driver");
                 String url = "jdbc:mysql://localhost:3306/pbo2";
                 String user = "root";
                 String password = "cien3110";

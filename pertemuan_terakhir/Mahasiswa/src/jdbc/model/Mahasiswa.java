@@ -1,45 +1,44 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package jdbc.model;
 
-/**
- *
- * @author naufa
- */
 public class Mahasiswa {
-  private int id;
-  private String nama;
 
-  public Mahasiswa() {
-    this.id = 0;
-    this.nama = "";
-  }
+    private int id;
+    private String name;
 
-  public Mahasiswa(int id, String nama) {
-    this.id = id;
-    this.nama = nama;
-  }
+    // Konstruktor default
+    public Mahasiswa() {
+    }
 
-  public int getId() {
-    return id;
-  }
+    // Konstruktor dengan nama saja
+    public Mahasiswa(String name) {
+        this.name = name;
+    }
 
-  public String getNama() {
-    return nama;
-  }
+    // Konstruktor dengan id dan nama
+    public Mahasiswa(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
-  public void setId(int id) {
-    this.id = id;
-  }
+    // Getter dan Setter
+    public int getId() {
+        return id;
+    }
 
-  public void setNama(String nama) {
-    this.nama = nama;
-  }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-  @Override
-  public String toString() {
-    return "Mahasiswa{" + "id=" + id + ", nama=" + nama + "}";
-  }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Mahasiswa{" + "id=" + id + ", name=" + name + '}';
+    }
 }
